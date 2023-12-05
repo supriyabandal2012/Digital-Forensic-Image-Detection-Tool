@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 const keyFilePath = '/Users/supriyabandal/Desktop/DigitalForensics/Server/CRED.json';
 
 // Instantiate the ImageAnnotatorClient with the key file path
-const visionClient = new ImageAnnotatorClient({ keyFilename: process.env.GOOGLE_APPLICATION_CREDENTIALS });
+const visionClient = new ImageAnnotatorClient({ keyFilename: keyFilePath });
 
 // Endpoint for processing images
 app.post('/process-image', async (req, res) => {

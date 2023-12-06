@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000; // Use the PORT environment variable if a
 app.use(cors());
 
 // Set up middleware
-app.use(bodyParser.json());
+app.use(bodyParser.json({ limit: '10mb' }));
 
 // Provide the path to your service account key file
 const keyFilePath = '/etc/secrets/CRED.json';

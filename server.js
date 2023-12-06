@@ -13,7 +13,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Provide the path to your service account key file
-const keyFilePath = '/mnt/secrets/CRED.json';
+const keyFilePath = '/etc/secrets/CRED.json';
 
 // Instantiate the ImageAnnotatorClient with the key file path
 const visionClient = new ImageAnnotatorClient({ keyFilename: keyFilePath });
